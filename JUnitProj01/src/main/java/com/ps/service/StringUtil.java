@@ -6,7 +6,7 @@ import java.time.LocalDate;
 public class StringUtil {
 	public static boolean isPallendrome(String str) {
 		if (str == null || str.equalsIgnoreCase("") || str.length() == 0)
-			throw new IllegalArgumentException("Invalid Inputs");
+			throw new IllegalArgumentException("Invalid Inputss");
 		String rev = new StringBuffer(str).reverse().toString();
 		return str.equals(rev);
 	}
@@ -16,6 +16,9 @@ public class StringUtil {
 			return null;
 		else
 			return LocalDate.of(year, month, day);
+	}
+	public int showLength(String str) {
+		return str.length();
 	}
 	
 }
